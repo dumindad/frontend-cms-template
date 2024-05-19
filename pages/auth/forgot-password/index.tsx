@@ -32,8 +32,8 @@ const ForgotPasswordPage: Page = () => {
         setEmail(e.target.value);
     };
 
-    const handleSubmit = async (event) => {
-        event.preventDefault();
+    const handleSubmit = async () => {
+        // event.preventDefault();
         await sendActivationLink({ email });
     };
 
