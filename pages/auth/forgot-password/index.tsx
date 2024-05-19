@@ -60,13 +60,13 @@ const ForgotPasswordPage: Page = () => {
                 //     }]);
             } else {
                 clearMessages();
-                msgs?.current?.show(
-                    [{
-                        sticky: true,
-                        severity: 'error',
-                        detail: 'Something went wrong, please try again later!',
-                        closable: false
-                    }]);
+                // msgs?.current?.show(
+                //     [{
+                //         sticky: true,
+                //         severity: 'error',
+                //         detail: 'Something went wrong, please try again later!',
+                //         closable: false
+                //     }]);
             }
         });
     }
