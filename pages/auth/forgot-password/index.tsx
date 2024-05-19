@@ -40,7 +40,7 @@ const ForgotPasswordPage: Page = () => {
     const sendActivationLink = async (user: UserInterface) => {
         await authService.passwordRecoveryLink(user).then(() => {
             clearMessages();
-            msgs.current?.show(
+            msgs?.current?.show(
                 [{
                     sticky: true,
                     severity: 'success',
