@@ -40,24 +40,24 @@ const ForgotPasswordPage: Page = () => {
     const sendActivationLink = async (user: UserInterface) => {
         await authService.passwordRecoveryLink(user).then(() => {
             clearMessages();
-            msgs?.current?.show(
-                [{
-                    sticky: true,
-                    severity: 'success',
-                    detail: 'The password recovery link is successfully sent. Please check your emails! ',
-                    closable: false
-                }]);
+            // msgs?.current?.show(
+            //     [{
+            //         sticky: true,
+            //         severity: 'success',
+            //         detail: 'The password recovery link is successfully sent. Please check your emails! ',
+            //         closable: false
+            //     }]);
         }, (error) => {
             console.log(error);
             if (error.status === 404) {
                 clearMessages();
-                msgs?.current?.show(
-                    [{
-                        sticky: true,
-                        severity: 'error',
-                        detail: "This email doesn't exist in our database!",
-                        closable: false
-                    }]);
+                // msgs?.current?.show(
+                //     [{
+                //         sticky: true,
+                //         severity: 'error',
+                //         detail: "This email doesn't exist in our database!",
+                //         closable: false
+                //     }]);
             } else {
                 clearMessages();
                 msgs?.current?.show(
