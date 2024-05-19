@@ -81,7 +81,7 @@ const ForgotPasswordPage: Page = () => {
                     <div className="w-full surface-card py-8 px-5 sm:px-8" style={{ borderRadius: '53px' }}>
                         <div className="text-center mb-5">
                             <div className="flex align-items-center justify-content-between">
-                                <Messages ref={msgs} />
+                                {/* <Messages ref={msgs} /> */}
                             </div>
                             <div className="text-900 text-3xl font-medium mb-3">Password recovery</div>
                             <span className="text-600 font-medium">Enter your email to receive a link to update your password</span>
