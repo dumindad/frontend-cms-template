@@ -51,7 +51,7 @@ const ForgotPasswordPage: Page = () => {
             console.log(error);
             if (error.status === 404) {
                 clearMessages();
-                msgs.current?.show(
+                msgs?.current?.show(
                     [{
                         sticky: true,
                         severity: 'error',
@@ -60,7 +60,7 @@ const ForgotPasswordPage: Page = () => {
                     }]);
             } else {
                 clearMessages();
-                msgs.current?.show(
+                msgs?.current?.show(
                     [{
                         sticky: true,
                         severity: 'error',
