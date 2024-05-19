@@ -25,7 +25,7 @@ const ForgotPasswordPage: Page = () => {
     const containerClassName = classNames('surface-ground flex align-items-center justify-content-center min-h-screen min-w-screen overflow-hidden', { 'p-input-filled': layoutConfig.inputStyle === 'filled' });
 
     const clearMessages = () => {
-        msgs.current?.clear();
+        // msgs.current?.clear();
     };
 
     const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
